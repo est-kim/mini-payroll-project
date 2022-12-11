@@ -23,6 +23,7 @@ class Assistant:
         self.phone = phone
         self.is_bilingual = is_bilingual
 
+
 class Manager:
 
     salary = 85000
@@ -35,6 +36,7 @@ class Manager:
         self.phone = phone
         self.department = department
 
+
 class CEO:
 
     salary = 180000
@@ -46,6 +48,7 @@ class CEO:
         self.address = address
         self.phone = phone
         self.years_of_experience = years_of_experience
+
 
 class CTO:
 
@@ -71,7 +74,7 @@ def calculate_employee_payroll(employees):
         print(employee.name.capitalize() + "'s salary is: $" + str(salary))
         total += salary
 
-    print("\nThe total payroll this month will be: $", total)
+    print("\nThe total payroll this month will be: $", round(total, 2))
 
 def calculate_c_level_payroll(c_levels):
 
@@ -84,7 +87,7 @@ def calculate_c_level_payroll(c_levels):
         print(c_level.name.capitalize() + "'s salary is $" + str(salary))
         total += salary
 
-    print("\nThe total payroll this month will be: $", total)
+    print("\nThe total payroll this month will be: $", round(total, 2))
 
 jack = Programmer("Jack", 45, "5th Avenue", "555-563-3457", ["Python", "Java"])
 isabel = Programmer("Isabel", 25, "6th Avenue", "234-245-8535", ["JavaScript"])
